@@ -1,11 +1,11 @@
-# Zip lambda code
+# Zip file
 data "archive_file" "lambda_zip" {
   type        = "zip"
   source_file = "${path.module}/lambda.py"
   output_path = "${path.module}/lambda.zip"
 }
 
-# IAM role for Lambda
+# IAM 
 resource "aws_iam_role" "lambda_role" {
   name = "eventbridge-lambda-role"
 
