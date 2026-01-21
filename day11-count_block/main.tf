@@ -1,16 +1,3 @@
-# variable "create_ec2" {
-#   type    = bool
-#   default = false
-# }
-
-# resource "aws_instance" "app" {
-#   count = var.create_ec2 ? 1 : 0
-
-#   ami           = "ami-068c0051b15cdb816"
-#   instance_type = "t2.micro"
-# }
-
-
 variable "azs" {
   default = ["ap-south-1a", "ap-south-1b"]
 }
